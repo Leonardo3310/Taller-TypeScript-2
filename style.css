@@ -1,36 +1,35 @@
 
-#main_container{
-    margin : 150px;
-    width:600px;
+.container {
+    display: flex;
+    justify-content: center; /* Cambiar a center para centrar los hijos */
+    align-items: flex-start; /* Alinear los elementos al principio verticalmente */
+    padding: 20px 0; /* Añadir algo de padding vertical */
 }
 
-
-
-table{
-
-    
-    margin-top: 50px;
-    background-color: rgb(199, 199, 199);
-    text-align: left;
-    border-collapse:collapse ;
-    width: 100%;
-
+.list-container {
+    width: 45%;
+    margin-right: 5%; /* Agregar margen a la derecha para separar de details-container */
 }
 
-
-.div-centered{
-    margin-right: 550px;
-    margin-left :50px;
-    
+.details-container {
+    width: 45%;
 }
 
-th,td{
-    padding: 15px;
-
+table {
+    width: 100%; /* Hacer que la tabla ocupe todo el ancho del contenedor */
+    border-collapse: collapse; /* Colapsar bordes para un look más limpio */
+    font-size: 16px; /* Ajustar según lo necesites */
 }
 
+table, th, td {
+    border: 1px solid #ddd; /* Agregar bordes a la tabla y celdas */
+    padding: 8px; /* Espacio interno para las celdas */
+}
 
-thead{
-    background-color: rgb(146, 149, 153);
-    border-bottom: solid 5px rgba(145, 150, 189, 0.4);
+th {
+    background-color: #f2f2f2; /* Un color de fondo para los encabezados */
+}
+
+.card {
+    font-size: 16px; /* Ajustar según lo necesites */
 }
