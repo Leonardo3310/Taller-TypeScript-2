@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 1</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<style>
+
+    .div-1 {
+        background-color: #4abcb3;
+    }
+
+</style>
+<body>
+
+    <div class = "div-1">
+        <img src = "imagen3.jpg" width="100" height="100"  >
+    </div>
+
+
+    <div class = "div-centered">
+
+       
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Channel</th>
+                        <th>Seasons</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id = "series"></tbody>
+                
+                <tbody >
+                    <tr>
+                        <td>
+                            Numero de temporadas
+                        </td>
+                        <td id="promedio-seasons">
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody id = "promedio-seasons"></tbody>
+            </table>
+
+
+
+   
+
+
+    </div>
+
+    <!-- Luego carga serie.js que define la clase Serie -->
+    <script type="module" src="./scripts/serie.js"></script>
+    
+
+    <script>var exports = {};</script>
+    <!-- Primero carga data.js que contiene los datos -->
+    <script type="module" src="./scripts/data.js"></script>
+
+    
+
+    <!-- Finalmente, carga main.js que utiliza las clases y datos -->
+    <script type="module" src="./scripts/main.js"></script>
+   
+
+</body>

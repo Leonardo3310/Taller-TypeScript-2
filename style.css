@@ -1,0 +1,36 @@
+
+#main_container{
+    margin : 150px;
+    width:600px;
+}
+
+
+
+table{
+
+    
+    margin-top: 50px;
+    background-color: rgb(199, 199, 199);
+    text-align: left;
+    border-collapse:collapse ;
+    width: 100%;
+
+}
+
+
+.div-centered{
+    margin-right: 550px;
+    margin-left :50px;
+    
+}
+
+th,td{
+    padding: 15px;
+
+}
+
+
+thead{
+    background-color: rgb(146, 149, 153);
+    border-bottom: solid 5px rgba(145, 150, 189, 0.4);
+}
