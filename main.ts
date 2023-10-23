@@ -48,6 +48,7 @@ function showSeriesDetails(serie: Serie): void {
 
 
   seriesImage.src = serie.img;
+  console.log(serie.img);
   seriesImage.alt = serie.name;
   seriesName.textContent = serie.name;
   seriesDescription.textContent = serie.description;

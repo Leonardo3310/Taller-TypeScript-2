@@ -25,6 +25,7 @@ function showSeriesDetails(serie) {
     var seriesDescription = document.getElementById('series-description');
     var seriesLink = document.getElementById('series-link');
     seriesImage.src = serie.img;
+    console.log(serie.img);
     seriesImage.alt = serie.name;
     seriesName.textContent = serie.name;
     seriesDescription.textContent = serie.description;
