@@ -32,4 +32,8 @@ function getSeasons(series: Serie[]): number {
 
   const prom :number = promSeasons/series.length
   return prom;
+
+
 }
+
+
