@@ -22,6 +22,8 @@ function renderSeriesInTable(series: Serie[]): void {
                            <td>${c.channel}</td>
                            <td>${c.seasons}</td>
                            `;
+    // Añadir evento de clic
+    trElement.addEventListener('click', () => showSeriesDetails(c));
     seriesTbody.appendChild(trElement);
   });
 }
@@ -36,4 +38,22 @@ function getSeasons(series: Serie[]): number {
 
 }
 
+function showSeriesDetails(serie: Serie): void {
+  const detailsCard = document.getElementById('details-card')!;
+  const seriesImage = <HTMLImageElement>document.getElementById('series-image');
+
+  const seriesName = document.getElementById('series-name')!;
+  const seriesDescription = document.getElementById('series-description')!;
+  const seriesLink = <HTMLAnchorElement>document.getElementById('series-link');
+
+
+  seriesImage.src = serie.img;
+  seriesImage.alt = serie.name;
+  seriesName.textContent = serie.name;
+  seriesDescription.textContent = serie.description;
+  seriesLink.href = serie.link;
+  seriesLink.textContent = "Go to " + serie.name;
+
+  detailsCard.style.display = "block";
+}
 

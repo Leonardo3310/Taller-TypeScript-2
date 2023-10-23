@@ -4,8 +4,8 @@ export class Serie {
     channel: string;
     seasons: number;
     description : string;
-    link:String;
-    img:String;
+    link:string;
+    img:string;
   
     constructor( top : number,name: string, channel: string,seasons:number,description:string,link:string, img:string) {
       this.top = top;
